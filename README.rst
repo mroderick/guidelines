@@ -57,15 +57,24 @@ branch.
 
 As a reviewer, you should focus on the following:
 
- * Readability - Is the code easy to follow and does it follow the conventions
-                 of the code around it
- * Naming - Whilst avoiding unnecessary bikeshedding, naming is important
-            (`and it's difficult! <http://martinfowler.com/bliki/TwoHardThings.html>`_)
- * Interfaces and signatures - Make sure public facing APIs are intuitive
- * Testing - Is the code properly covered by tests and is it easy to correlate
-             the tests with the code
- * Improvements - Is there anything that you can see that could be improved
-                  with utilities or patterns that you're aware of
+    Readability
+        Is the code easy to follow and does it follow the conventions of the
+        code around it
+
+    Naming
+        Whilst avoiding unnecessary bikeshedding, naming is important
+        (`and it's difficult! <http://martinfowler.com/bliki/TwoHardThings.html>`_)
+
+    Interfaces and signatures
+        Make sure public facing APIs are intuitive
+
+    Testing
+        Is the code properly covered by tests and is it easy to correlate
+        the tests with the code
+
+    Improvements
+        Is there anything that you can see that could be improved with
+        utilities or patterns that you're aware of.
 
 (The above is not an exhaustive list and feel free to add more to it!)
 
