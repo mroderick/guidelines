@@ -57,26 +57,42 @@ branch.
 
 As a reviewer, you should focus on the following:
 
+Design Decisions
+    Which patterns have been implemented in this branch? Are there other
+    options to consider and is there a clear advantage to one over the other?
+
 Readability
     Is the code easy to follow and does it follow the conventions of the
-    code around it
+    code around it? Are there things that the linter might have missed or
+    suggestions to reformat code so that it's less confusing.
 
 Naming
     Whilst avoiding unnecessary bikeshedding, naming is important
     (`and it's difficult! <http://martinfowler.com/bliki/TwoHardThings.html>`_)
 
 Interfaces and signatures
-    Make sure public facing APIs are intuitive
+    Make sure public facing APIs are intuitive.
 
 Testing
     Is the code properly covered by tests and is it easy to correlate
-    the tests with the code
+    the tests with the code.
 
 Improvements
     Is there anything that you can see that could be improved with
     utilities or patterns that you're aware of.
 
 (The above is not an exhaustive list and feel free to add more to it!)
+
+.. note::
+    It's important for both the author(s) and the reviewer(s) to keep in mind
+    that this process is improve the quality of the overall codebase. Tone
+    of voice is important and all comments should be constructive rather than
+    critical. That being said, short comments are fine as long as they
+    effectively communicate the changes required (and why).
+
+    Try to be objective in differentiating between the *right* way to
+    implement something and the way *you* would have implemented it if you
+    were writing the code.
 
 Documentation
 -------------
@@ -86,6 +102,23 @@ development team and any others that may need to utilise code from that
 codebase. Special care should be paid to APIs especially public ones that
 may be consumed by code living outside of that particular codebase to prevent
 engineers from having to dig into code to determine behaviour.
+
+Blockers
+--------
+
+We all get blocked by things from time to time, whether they be waiting for
+the answer to a question or waiting for another piece of work to be completed.
+We do our best not to schedule work for the same sprint that have cross
+dependencies which may not be resolved. It's important to raise the visibility
+of the blocker to the rest of the team, especially those who can remove it.
+Most commonly this can be done during the daily standup or a discussion at the
+point where the blocker is identified.
+
+Improvements
+------------
+
+Improvements to the development process should be discussed in the Sprint
+Retrospectives at the end of each sprint.
 
 Project specifics
 -----------------
