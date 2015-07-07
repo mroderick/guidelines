@@ -16,7 +16,7 @@ Always favour brackets closing on the same indentation level as they're opened.
 
 Bad:
 
-.. code-block::
+.. code-block:: python
 
     my_function(
         my_param1,
@@ -31,7 +31,7 @@ Bad:
 
 Good:
 
-.. code-block::
+.. code-block:: python
 
     my_function(
         my_param1,
@@ -40,7 +40,7 @@ Good:
 
 Multiple brackets can be combined if it aids readability:
 
-.. code-block::
+.. code-block:: python
 
     my_function(my_param1, my_param2={
         'foo': 'bar',
@@ -52,7 +52,7 @@ brackets.
 
 Bad:
 
-.. code-block::
+.. code-block:: python
 
     for item in my_generator(
             my_param1, my_param2, my_param3, [1, 2, 3, 4, 5]):
@@ -66,7 +66,7 @@ Bad:
 
 Good:
 
-.. code-block::
+.. code-block:: python
 
     for item in my_generator(
         my_param1, my_param2, my_param3, [1, 2, 3, 4, 5]
