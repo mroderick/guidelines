@@ -120,6 +120,12 @@ Improvements
 Improvements to the development process should be discussed in the Sprint
 Retrospectives at the end of each sprint.
 
+Styleguides
+-----------
+
+* `Python <styleguides/python.rst>`_
+* `Javascript <styleguides/javascript.rst>`_
+
 Project specifics
 -----------------
 
