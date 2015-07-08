@@ -11,11 +11,10 @@ Overview
 #. `Documentation <#documentation>`_
 #. `Blockers <#blockers>`_
 #. `Improvements <#improvements>`_
-#. `Styleguides <#styleguides>`_
 #. `Project specifics <#project-specifics>`_
 #. `Scoping new work <#scoping-new-work>`_
-#. Styleguides
 
+Styleguides:
     * `Python <styleguides/python.rst>`_
     * `Javascript <styleguides/javascript.rst>`_
 
