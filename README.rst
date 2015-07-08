@@ -5,14 +5,16 @@ Overview
 --------
 
 #. `Editors <#editors>`_
-#. `Testing <#testing>`_
-#. `Branching <#branching>`_
-#. `Code review <#code-review>`_
-#. `Documentation <#documentation>`_
-#. `Blockers <#blockers>`_
+#. `Development process <#development-process>`_
+    * `Testing <#testing>`_
+    * `Branching <#branching>`_
+    * `Code review <#code-review>`_
+    * `Documentation <#documentation>`_
+    * `Blockers <#blockers>`_
+#. `Scoping new work <#scoping-new-work>`_
+    * `Identifying new work <#identifying-new-work>`_
 #. `Improvements <#improvements>`_
 #. `Project specifics <#project-specifics>`_
-#. `Scoping new work <#scoping-new-work>`_
 
 Styleguides:
     * `Python <styleguides/python.rst>`_
@@ -29,8 +31,11 @@ which can lint your code as you're writing it. This prevents accidental
 syntax errors from being committed and that Code Reviews can focus more on
 the content of the code being submitted.
 
+Development process
+-------------------
+
 Testing
--------
+~~~~~~~
 
 Testing is great, it proves that your code works (so that someone else won't
 have to) and provides a great comfort blanket for refactoring and working
@@ -45,7 +50,7 @@ add redundent tests or to test third party code. Focus instead on writing
 tests with clear objectives and assertions.
 
 Branching
----------
+~~~~~~~~~
 
 All new code should be committed to a feature branch branched off ``master``
 and branches should have a name descriptive of the feature being worked on.
@@ -53,7 +58,7 @@ and branches should have a name descriptive of the feature being worked on.
 The ``production`` branch is reserved to track against deployed code.
 
 Code review
------------
+~~~~~~~~~~~
 
 Every branch must be code reviewed before being merged into ``master`` and
 have a stamp after the most recent commit indicating that the reviewer is
@@ -112,7 +117,7 @@ Improvements
     were writing the code.
 
 Documentation
--------------
+~~~~~~~~~~~~~
 
 Where possible code should be documented for other contributers, the wider
 development team and any others that may need to utilise code from that
@@ -121,7 +126,7 @@ may be consumed by code living outside of that particular codebase to prevent
 engineers from having to dig into code to determine behaviour.
 
 Blockers
---------
+~~~~~~~~
 
 We all get blocked by things from time to time, whether they be waiting for
 the answer to a question or waiting for another piece of work to be completed.
@@ -130,19 +135,6 @@ dependencies which may not be resolved. It's important to raise the visibility
 of the blocker to the rest of the team, especially those who can remove it.
 Most commonly this can be done during the daily standup or a discussion at the
 point where the blocker is identified.
-
-Improvements
-------------
-
-Improvements to the development process should be discussed in the Sprint
-Retrospectives at the end of each sprint.
-
-
-Project specifics
------------------
-
-See the ``README`` of the project you are contributing to for more specific
-guidelines and conventions used within that codebase.
 
 Scoping new work
 ----------------
@@ -155,3 +147,21 @@ Scoping new work
 * context
 * dependencies
 * clientside/serverside
+
+Identifying new work
+~~~~~~~~~~~~~~~~~~~~
+
+New work tends to fall into two categories, Product/Feature work or
+Technical/Infrastructure work
+
+Improvements
+------------
+
+Improvements to the development process should be discussed in the Sprint
+Retrospectives at the end of each sprint.
+
+Project specifics
+-----------------
+
+See the ``README`` of the project you are contributing to for more specific
+guidelines and conventions used within that codebase.
