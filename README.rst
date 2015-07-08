@@ -1,6 +1,24 @@
 Lystable developer guidelines
 =============================
 
+Overview
+--------
+
+#. `Editors <#editors>`_
+#. `Testing <#testing>`_
+#. `Branching <#branching>`_
+#. `Code review <#code-review>`_
+#. `Documentation <#documentation>`_
+#. `Blockers <#blockers>`_
+#. `Improvements <#improvements>`_
+#. `Styleguides <#styleguides>`_
+#. `Project specifics <#project-specifics>`_
+#. `Scoping new work <#scoping-new-work>`_
+#. Styleguides
+
+    * `Python <styleguides/python.rst>`_
+    * `Javascript <styleguides/javascript.rst>`_
+
 Editors
 -------
 
