@@ -138,14 +138,21 @@ Improvements
 Improvements to the development process should be discussed in the Sprint
 Retrospectives at the end of each sprint.
 
-Styleguides
------------
-
-* `Python <styleguides/python.rst>`_
-* `Javascript <styleguides/javascript.rst>`_
 
 Project specifics
 -----------------
 
 See the ``README`` of the project you are contributing to for more specific
 guidelines and conventions used within that codebase.
+
+Scoping new work
+----------------
+
+* Product / technical
+* Kickoff
+* Epics
+* How to write a Jira
+* definition of done
+* context
+* dependencies
+* clientside/serverside
