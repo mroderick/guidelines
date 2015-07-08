@@ -4,8 +4,8 @@ Lystable developer guidelines
 Overview
 --------
 
-#. `Editors <#editors>`_
 #. `Development process <#development-process>`_
+    * `Editors <#editors>`_
     * `Testing <#testing>`_
     * `Branching <#branching>`_
     * `Code review <#code-review>`_
@@ -20,8 +20,11 @@ Styleguides:
     * `Python <styleguides/python.rst>`_
     * `Javascript <styleguides/javascript.rst>`_
 
+Development process
+-------------------
+
 Editors
--------
+~~~~~~~
 
 There are many text editors and IDEs out there and we all have our favourite.
 
@@ -30,9 +33,6 @@ code speaks for itself. One thing we do encourage is that you have an editor
 which can lint your code as you're writing it. This prevents accidental
 syntax errors from being committed and that Code Reviews can focus more on
 the content of the code being submitted.
-
-Development process
--------------------
 
 Testing
 ~~~~~~~
@@ -139,20 +139,55 @@ point where the blocker is identified.
 Scoping new work
 ----------------
 
-* Product / technical
-* Kickoff
-* Epics
-* How to write a Jira
-* definition of done
-* context
-* dependencies
-* clientside/serverside
-
 Identifying new work
 ~~~~~~~~~~~~~~~~~~~~
 
 New work tends to fall into two categories, Product/Feature work or
-Technical/Infrastructure work
+Technical/Infrastructure work. This may be identified ahead of time from a
+roadmap or through the course of some other work where changes fall outside
+the scope of the current ticket. The process for scoping this work should
+primarily look the same regardless of it's source.
+
+Clarifying the requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Without clear requirements, the implementation and the desired end result
+is likely to take longer to achieve.
+
+A good idea is to validate the requirements with others that will be
+impacted by the proposed changes. For Product work, this could be whoever
+requested the feature, or other members of the product team. For
+infrastructure or architecture work this might be other engineers that would
+use the result most frequently.
+
+Epics
+~~~~~
+
+If a feature requires a substantial amount of effort or input from several
+parties, it makes sense to group a number of tickets under an `Epic`.
+
+What to include in a ticket
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Context - Why are we building this and where does it fit alongside other
+  tickets (blockers etc.)
+* Definition of done (tests, docs, reviews, etc) - clear outcomes of this
+  ticket
+* Links to supporting documentation (designs, google docs, etc)
+* Implementation suggestions - We don't need to do all the design work but the
+  engineer picking up the ticket should have a clear understanding of what
+  the intended implementation was (also helps for sizing)
+* Where the new code is likely to live (clientside? / serverside? / existing
+  service? / new component?)
+* Outstanding questions that need answering as part of this ticket
+* What is out of scope for this ticket
+
+Sizing
+~~~~~~
+
+* max size
+* planning poker
+* atomic bits of work
 
 Improvements
 ------------
