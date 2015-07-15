@@ -40,6 +40,10 @@ The Global CSS
 ============
 The LESS is compiled to a global stylesheet….
 
+Styleguide
+============
+You can run the KSS Stylguide with 'npm run styleguide'
+
 CSS Build Process
 ==================
 The CSS is built via Webpack. We have `POST-CSS <https://github.com/postcss/postcss>`_ in place doing most of the work, so feel free to add any new modules. Currently we are using two POST-CSS Modules; the ubiquitous Autoprefixer and CSS Variables.
