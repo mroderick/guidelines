@@ -7,10 +7,19 @@ Editors
 There are many text editors and IDEs out there and we all have our favourite.
 
 We're not precious about which ones are in place as at the end of the day the
-code speaks for itself. One thing we do encourage is that you have an editor
+code speaks for itself.
+
+One thing we do encourage is that you have an editor
 which can lint your code as you're writing it. This prevents accidental
 syntax errors from being committed and that Code Reviews can focus more on
 the content of the code being submitted.
+
+We also prefer you to use an editor that loads the editorconfig in each
+repository. More information can be found at :
+
+* http://editorconfig.org/
+* Sublime : https://github.com/sindresorhus/editorconfig-sublime
+* Atom : https://github.com/sindresorhus/atom-editorconfig
 
 Testing
 -------
@@ -33,6 +42,10 @@ Branching
 All new code should be committed to a feature branch branched off ``master``
 and branches should have a name descriptive of the feature being worked on.
 
+We also have Github connected to JIRA and branches can be created from your
+epics, stories or tasks. This helps us document your commits and branches
+both during code-reviews and in a few years time.
+
 The ``production`` branch is reserved to track against deployed code.
 
 Code review
@@ -50,6 +63,11 @@ Request when a branch is ready for review and notify the team. Any other
 member of the team (with a reasonable amount of context) can opt in to
 review the code, although it doesn't make much sense for more than a couple
 of people to review the code at any given time.
+
+We recommend that you check-out the code that is being reviewed. Take the time
+to view the files changed and click through the use stories. Understanding the
+code is key to a successful review. Don't be shy to speak to the author and
+get a talk through of the code to fully understand the PR.
 
 When reviewing code, comments should be left inline with the lines/blocks
 of code they reference unless they are more generic comments on the whole
@@ -102,6 +120,11 @@ development team and any others that may need to utilise code from that
 codebase. Special care should be paid to APIs especially public ones that
 may be consumed by code living outside of that particular codebase to prevent
 engineers from having to dig into code to determine behaviour.
+
+When editing JavaScript please use an extension such a DocBlockr to quickly
+add JSDoc style comments to your code. We encourage rigorous JSDoc documentation
+in JavaScript to create a complete auto-documentation feature. More information
+on JSDoc can be found here : http://usejsdoc.org/howto-amd-modules.html
 
 Blockers
 --------
