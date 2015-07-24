@@ -1,5 +1,5 @@
-Dev environment setup for ubuntu (14.04)
-========================================
+Dev environment setup for ubuntu (14.04-15.04)
+==============================================
 
 .. note::
     Depending on the project you're working and what you want to do
@@ -9,6 +9,10 @@ Dev environment setup for ubuntu (14.04)
     Installing some of these applications locally will make them
     clash ports with those running on docker containers (ie postgres or rabbit).
     You'll need extra fiddling if you want them to coexist.
+
+    One way to do it is to prevent the services from autostarting::
+
+        sudo update-rc.d postgresql disable
 
 
 Docker
@@ -46,7 +50,7 @@ Python 3
 
 You'll only need this if you want to set up a local env on some of the projects::
 
-    sudo apt-get install python-dev python-pip python3-pytest python3-pip python3-dev
+    sudo apt-get install python3-pytest python3-pip python3-dev
 
 You can use vanilla virtualenv, but if you prefer the wrapper::
 
@@ -65,11 +69,17 @@ forget to tell it to use python3::
 Postgresql
 ----------
 
-We use version 9.4 (on lws at least), which is not on the repos::
+We use version 9.4 (on lws at least), which is not on the repos on 14.04.
+You can add a custom repo to bring it in though::
 
     echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/apt/sources.list.d/pgdg.list
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
     sudo apt-key add -
+
+On 15.04 postgrest 9.4 is on the repos, so you can skip this step.
+
+Then you can install::
+
     sudo apt-get update
     sudo apt-get install postgresql-9.4 libpq-dev
 
