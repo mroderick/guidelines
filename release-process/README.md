@@ -31,9 +31,11 @@ This will deploy to staging again. Once you're happy with the branch, make a PR 
 
 - Open a PR for the branch **release/v0.3.0** into the **production** branch
 - Visit the release page for that project (e.g. for LWS it is https://github.com/lystable/lws/releases)
-- Create a release with the tag **v0.3.0**. It should contain: a) tag name, b) title, c) high-level description of the features in this release.
+- Create a release with the tag **v0.3.0** with your release branch as the target branch **release/v0.3.0**. 
 
-Make sure you label it as a **pre-release** until your PR is merged.
+You should add a high-level description of the features in this release.
 
-- Once the PR is merged into production, visit the pre-release and hit **Publish**.
+You should label this release as a **pre-release** (tick the box at the bottom) until your PR is merged into production.
+
+- Once the PR is merged into production, visit your pre-release and hit **Publish**.
 
