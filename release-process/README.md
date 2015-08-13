@@ -39,3 +39,8 @@ You should label this release as a **pre-release** (tick the box at the bottom) 
 
 - Once the PR is merged into production, visit your pre-release and hit **Publish**.
 
+# Merging any Hot Fixes back into master
+
+Because the hot fixes were done on the release branch and then went straight into production, we haven't got them yet in master. This means we need to bring them into master by **merging production into master**.
+
+- Open a PR from production into master
