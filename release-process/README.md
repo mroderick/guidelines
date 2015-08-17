@@ -40,7 +40,7 @@ This will deploy to staging again. Once you're happy with the branch, move to th
 
 # Merging a Release Candidate into Production
 
-- Open a PR for the branch **release/v0.2.0** into the **production** branch. I.e. when opening a PR via [this page](https://github.com/lystable/lws/compare) the production branch should be the **base** branch and your release branch should be the **head**.
+- Open a PR for **release/v0.2.0** (head) into **production** (base)
 - Once the PR is merged into production, create a new release for that project via its release page, e.g. here is the [LWS release page](https://github.com/lystable/lws/releases).
 - Use tag **v0.2.0** with the **production** branch as the target branch.
 
@@ -52,7 +52,7 @@ Hit **Publish** at the bottom of the release page when done.
 
 Because the hot fixes were done on the release branch and then went straight into production, we haven't got them yet in master. This means we need to bring them into master by **merging production into master**.
 
-- Open a PR from production (head) into master (base). **Do NOT delete the production branch** after merging it into master, as is normally the process when merging feature branches into master.
+- Open a PR for **production** (head) into **master** (base). **Do NOT delete the production branch** after merging it into master, as is normally the process when merging feature branches into master.
 
 # Additional Info
 
