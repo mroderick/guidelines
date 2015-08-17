@@ -1,8 +1,14 @@
 # Creating a Release Candidate
 
-- Go to the GitHub repository page, e.g. https://github.com/lystable/lws
-- Click on the branch drop-down and check the list of tags there
-- Find the latest tag, let's say this is **v0.1.3**
+- Checkout the repository you are about to release locally and pull the latest changes from master
+```
+git checkout master
+git pull
+```
+- Run this command to get the latest tag. Let's say this is **v0.1.3**
+```
+git describe --abbrev=0 --tags
+```
 - Create a branch locally with the name **release/v0.2.0** (see [Incrementing Versions](#version-increment))
 ```
 git checkout -b release/v0.2.0
