@@ -25,7 +25,7 @@ CircleCI will now build and deploy your release candidate to the staging environ
 - API: api.lystable.net
 - App: *.lystable.net
 
-# Making hot fixes to the Release Candidate
+# Making Bug Fixes to the Release Candidate
 
 This works the same way as your own feature branch, you add commits to it until you're satisfied.
 
@@ -48,9 +48,9 @@ You should add a high-level description of the features in this release.
 
 Hit **Publish** at the bottom of the release page when done.
 
-# Merging any Hot Fixes back into master
+# Merging any Bug Fixes back into master
 
-Because the hot fixes were done on the release branch and then went straight into production, we haven't got them yet in master. This means we need to bring them into master by **merging production into master**.
+Because the bug fixes were done on the release branch and then went straight into production, we haven't got them yet in master. This means we need to bring them into master by **merging production into master**.
 
 - Open a PR for **production** (head) into **master** (base). **Do NOT delete the production branch** after merging it into master, as is normally the process when merging feature branches into master.
 
