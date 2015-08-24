@@ -40,7 +40,7 @@ tests with clear objectives and assertions.
 Branching
 ---------
 
-We use [git flow](http://nvie.com/posts/a-successful-git-branching-model/)
+We use `git flow <http://nvie.com/posts/a-successful-git-branching-model/>`_
 as the base for our branching model.
 
 All new code should be committed to a feature branch branched off ``develop``
@@ -49,19 +49,23 @@ and branches should have a name descriptive of the feature being worked on.
 As we have Github connected to JIRA, branches can be created from your epics,
 stories, or tasks. You are also encouraged to name your branches so that JIRA
 picks up on them automatically. All you have to do is to make sure the
-ticket number, ie. `LYS-123`, is in the branch name -- something like 
-`feature/LYS-123-something-descriptive` should suffice. This helps us 
-document your commits and branches both during code-reviews and in a 
+ticket number, ie. `LYS-123`, is in the branch name -- something like
+`feature/LYS-123-something-descriptive` should suffice. This helps us
+document your commits and branches both during code-reviews and in a
 few years time.
 
 The ``master`` branch is reserved to track against deployed code.
 
-Code review
------------
+Code review / QA
+----------------
 
 Every branch must be code reviewed before being merged into ``master`` and
 have a stamp after the most recent commit indicating that the reviewer is
 happy with all the changes in that branch.
+
+**All code should be checked out and used by the reviewer wherever possible,
+especially when related to a feature or some functionality, to ensure the
+usability of the end result.**
 
 Code reviews are a collaborative process and form a conversation between a
 developer and one or more other members on the team and should be treated as
@@ -119,6 +123,19 @@ Improvements
     Try to be objective in differentiating between the *right* way to
     implement something and the way *you* would have implemented it if you
     were writing the code.
+
+Merging
+-------
+
+The requirements for a pull request to be considered ready to merge
+are as follows:
+
+* At least one comment from the reviewer which has been addressed
+  (in code or in reply) by the author
+* An emoji stamp (:+1: or other) from the reviewer(s) after the most
+  recent commit
+* The branch must be strictly ahead of master (eg. containing all of the
+  commits currently in master)
 
 Documentation
 -------------
