@@ -29,10 +29,20 @@ Editors
 There are many text editors and IDEs out there and we all have our favourite.
 
 We're not precious about which ones are in place as at the end of the day the
-code speaks for itself. One thing we do encourage is that you have an editor
+code speaks for itself.
+
+One thing we do encourage is that you have an editor
 which can lint your code as you're writing it. This prevents accidental
 syntax errors from being committed and that Code Reviews can focus more on
 the content of the code being submitted.
+
+We also prefer you to use an editor that loads the editorconfig in each
+repository. More information can be found at :
+
+* http://editorconfig.org/
+* Sublime : https://github.com/sindresorhus/editorconfig-sublime
+* Atom : https://github.com/sindresorhus/atom-editorconfig
+* IntelliJ editors (PyCharm etc.) : https://plugins.jetbrains.com/plugin/7294
 
 Testing
 ~~~~~~~
@@ -52,10 +62,21 @@ tests with clear objectives and assertions.
 Branching
 ~~~~~~~~~
 
-All new code should be committed to a feature branch branched off ``master``
+We use [git flow](http://nvie.com/posts/a-successful-git-branching-model/)
+as the base for our branching model.
+
+All new code should be committed to a feature branch branched off ``develop``
 and branches should have a name descriptive of the feature being worked on.
 
-The ``production`` branch is reserved to track against deployed code.
+As we have Github connected to JIRA, branches can be created from your epics,
+stories, or tasks. You are also encouraged to name your branches so that JIRA
+picks up on them automatically. All you have to do is to make sure the
+ticket number, ie. `LYS-123`, is in the branch name -- something like 
+`feature/LYS-123-something-descriptive` should suffice. This helps us 
+document your commits and branches both during code-reviews and in a 
+few years time.
+
+The ``master`` branch is reserved to track against deployed code.
 
 Code review
 ~~~~~~~~~~~
@@ -72,6 +93,11 @@ Request when a branch is ready for review and notify the team. Any other
 member of the team (with a reasonable amount of context) can opt in to
 review the code, although it doesn't make much sense for more than a couple
 of people to review the code at any given time.
+
+We recommend that you check-out the code that is being reviewed. Take the time
+to view the files changed and click through the use stories. Understanding the
+code is key to a successful review. Don't be shy to speak to the author and
+get a talk through of the code to fully understand the PR.
 
 When reviewing code, comments should be left inline with the lines/blocks
 of code they reference unless they are more generic comments on the whole
@@ -124,6 +150,11 @@ development team and any others that may need to utilise code from that
 codebase. Special care should be paid to APIs especially public ones that
 may be consumed by code living outside of that particular codebase to prevent
 engineers from having to dig into code to determine behaviour.
+
+When editing JavaScript please use an extension such a DocBlockr to quickly
+add JSDoc style comments to your code. We encourage rigorous JSDoc documentation
+in JavaScript to create a complete auto-documentation feature. More information
+on JSDoc can be found here : http://usejsdoc.org/howto-amd-modules.html
 
 Blockers
 ~~~~~~~~
