@@ -17,8 +17,8 @@ git checkout -b release/v0.2.0
 ```
 sawyer -u <GitHub username> lystable/<repository> v0.1.3 v0.2.0
 ```
-- Add the output to the beginning of the CHANGELOG.md file
-- Remove the PR from the changelog which is the previous release PR
+- Add the new change log to the start of CHANGELOG.md
+- Read through it and make sure it is sensible and correct
 - Check the repository's own RELEASE.md file to see if there are additional steps for this repository
 - Push it upstream as normal
 ```
