@@ -1,8 +1,8 @@
 # Creating a Release Candidate
 
-- Checkout the repository you are about to release locally and pull the latest changes from master
+- Checkout the repository you are about to release locally and pull the latest changes from develop
 ```
-git checkout master
+git checkout develop
 git pull
 ```
 - Run this command to get the latest tag. Let's say this is **v0.1.3**
@@ -13,6 +13,12 @@ git describe --abbrev=0 --tags
 ```
 git checkout -b release/v0.2.0
 ```
+- Generate the change log
+```
+sawyer -u <GitHub username> lystable/<repository> v0.1.3 v0.2.0
+```
+- Add the new change log to the start of CHANGELOG.md
+- Read through it and make any changes to ensure it is well organised and correct
 - Check the repository's own RELEASE.md file to see if there are additional steps for this repository
 - Push it upstream as normal
 ```
@@ -38,21 +44,19 @@ git push -u origin release/v0.2.0
 
 This will deploy to staging again. Once you're happy with the branch, move to the next step of merging to production.
 
-# Merging a Release Candidate into Production
+# Merging a Release Candidate into Master
 
-- Open a PR for **release/v0.2.0** (head) into **production** (base)
-- Once the PR is merged into production, create a new release for that project via its release page, e.g. here is the [LWS release page](https://github.com/lystable/lws/releases).
-- Use tag **v0.2.0** with the **production** branch as the target branch.
+- Open a PR for **release/v0.2.0** (head) into **master** (base)
+- Once the PR is merged into master, create a new release for that project via its release page, e.g. here is the [LWS release page](https://github.com/lystable/lws/releases).
+- Use tag **v0.2.0** with the **master** branch as the target branch.
+- Copy the new CHANGELOG.md section into the release description
+- Hit **Publish** at the bottom of the release page when done.
 
-You should add a high-level description of the features in this release.
+# Merging any Bug Fixes back into Develop
 
-Hit **Publish** at the bottom of the release page when done.
+Because the bug fixes were done on the release branch and then went straight into master, we haven't got them yet in develop. This means we need to bring them into develop by **merging master into develop**.
 
-# Merging any Bug Fixes back into master
-
-Because the bug fixes were done on the release branch and then went straight into production, we haven't got them yet in master. This means we need to bring them into master by **merging production into master**.
-
-- Open a PR for **production** (head) into **master** (base). **Do NOT delete the production branch** after merging it into master, as is normally the process when merging feature branches into master.
+- Open a PR for **master** (head) into **develop** (base). **Do NOT delete the master branch** after merging it into develop, as is normally the process when merging feature branches into develop.
 
 # Additional Info
 
