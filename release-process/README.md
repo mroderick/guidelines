@@ -10,17 +10,13 @@
 
 	dennis prepare [-v 0.2.0]
 
-- Verify the changes
-
-	git diff
-
-- Push them
+- Push the changes
 
 	dennis push
 
 Further instructions will be printed out, depending on the project you are in.
 
-## 2. Make Bug Fixes to the Release Candidate
+## 2. (Optional) Make Fixes to the Release Candidate
 
 - Pull
 
@@ -33,28 +29,8 @@ Further instructions will be printed out, depending on the project you are in.
 
 	dennis push
 
-## 3. Create and Merge the PR into Master
+## 3. Merge into Master
 
-- Create the PR
+- Merges RC into Master, publishes a GitHub release, and merges Master back into Develop
 
 	dennis release
-
-- Publish the GitHub Release
-
-	dennis publish
-
-- Review and Merge the PR
-
-## 4. Create and Merge the PR into Develop
-
-- Create the PR
-
-	dennis mergeback
-
-- Review and Merge the PR
-
-## Too Many Steps... I'm Lost!
-
-- Ask `dennis` what's up next
-
-	dennis whatsnext
