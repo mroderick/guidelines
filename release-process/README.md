@@ -7,9 +7,9 @@
 ## 1. Create a Release Candidate
 
 - Choose what type of release this is, one of:
-	- fix (v0.2.3 -> v0.2.4)
-	- minor (v0.2.3 -> v0.3.0)
-	- major (v0.2.3 -> v1.0.0)
+	- **fix**, i.e. v0.2.3 -> v0.2.4
+	- **minor**, i.e. v0.2.3 -> v0.3.0
+	- **major**, i.e. v0.2.3 -> v1.0.0
 
 - Prepare a new release
 ```
