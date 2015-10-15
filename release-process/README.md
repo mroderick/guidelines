@@ -1,39 +1,34 @@
 ## Local Setup
 
-- Install `dennis`
-```
-	pip install dennis
-```
+- [Install dennis](https://github.com/lystable/dennis)
+
+**All `dennis` commands should be run while inside the project-to-be-released directory.**
 
 ## 1. Create a Release Candidate
 
 - Prepare a new release
 ```
-	dennis prepare [-v 0.2.0]
-```
-- Push the changes
-```
-	dennis push
+	dennis prepare --type fix --user <GitHub username>
 ```
 
-Further instructions will be printed out, depending on the project you are in.
+## 2. QA Cycle
 
-## 2. (Optional) Make Fixes to the Release Candidate
+- Do QA testing
 
-- Pull
+- Make changes
 ```
 	git checkout release/v0.2.0
 	git pull
+	...
+	... make changes ...
+	...
+	git commit -a
+	git push -u origin release/v0.2.0
 ```
-- Make changes
 
-- Commit and push
-```
-	dennis push
-```
-## 3. Merge into Master
+## 3. Complete Release
 
 - Merges RC into Master, publishes a GitHub release, and merges Master back into Develop
 ```
-	dennis release
+	dennis release --user <GitHub username>
 ```
