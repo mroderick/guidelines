@@ -1,3 +1,18 @@
+## [v0.2.0](https://github.com/lystable/guidelines/tree/v0.2.0) (Unreleased)
+
+[Compare to previous release](https://github.com/lystable/guidelines/compare/v0.1.2...v0.2.0)
+
+**Added**:
+
+- Feature/release process refresh 
+  ([@yannispanousis](https://github.com/yannispanousis/)
+  in [\#21](https://github.com/lystable/guidelines/pull/21/))
+- Master back into Develop 
+  ([@yannispanousis](https://github.com/yannispanousis/)
+  in [\#20](https://github.com/lystable/guidelines/pull/20/))
+
+
+
 ## [v0.1.2](https://github.com/lystable/guidelines/tree/v0.1.2) (Unreleased)
 
 [Compare to previous release](https://github.com/lystable/guidelines/compare/v0.1.1...v0.1.2)
