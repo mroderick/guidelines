@@ -1,3 +1,12 @@
+## [v0.3.0](https://github.com/lystable/guidelines/tree/v0.3.0) (Unreleased)
+
+[Compare to previous release](https://github.com/lystable/guidelines/compare/v0.2.0...v0.3.0)
+
+**Added**:
+
+
+
+
 ## [v0.2.0](https://github.com/lystable/guidelines/tree/v0.2.0) (Unreleased)
 
 [Compare to previous release](https://github.com/lystable/guidelines/compare/v0.1.2...v0.2.0)
