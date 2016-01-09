@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-lystable",
+  "version": "1.0.0",
+  "description": "Base eslint config conforming to Lystable development guidelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "javascript",
+    "config",
+    "lystable"
+  ],
+  "author": {
+    "name": "Chris Pearce",
+    "url": "https://twitter.com/@chrisui"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lystable/guidelines.git"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^2.1.1",
+    "eslint-plugin-react": "^3.14.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=1.0.0"
+  }
+}
