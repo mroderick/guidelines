@@ -7,6 +7,9 @@ We follow the excellent styleguide provided by
 Exceptions or extensions to the specifics discussed in that guide are
 documented here or in project specific documentation.
 
+### Eslint Config
+Use the base Lystable eslint config for your Javascript projects! Find details [here](eslint-config-lystable).
+
 Function definition
 -------------------
 Extending the [Airbnb Function Rules](https://github.com/airbnb/javascript#functions)...
