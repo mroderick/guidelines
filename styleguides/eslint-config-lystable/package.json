@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lystable",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Base eslint config conforming to Lystable development guidelines",
   "main": "index.js",
   "scripts": {
