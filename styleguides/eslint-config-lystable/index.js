@@ -1,7 +1,7 @@
 module.exports = {
   "plugins": ["react"],
   // Extend AirBnB style guide - https://github.com/airbnb/javascript
-  "extends": "lystable/node_modules/eslint-config-airbnb",
+  "extends": "eslint-config-airbnb",
   // on top of the AirBnB guide...
   "rules": {
     "no-use-before-define": [2, "nofunc"],
