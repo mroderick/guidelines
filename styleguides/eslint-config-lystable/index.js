@@ -17,6 +17,8 @@ module.exports = {
     "computed-property-spacing": [2, "never"],
     "space-in-brackets": 0,
     "space-before-function-paren": [2, { "anonymous": "never", "named": "never" }],
+    "quote-props": 0, // prefer but allow consistency
+    "no-unneeded-ternary": [2, {"defaultAssignment": true}],
     // react rules - https://github.com/yannickcr/eslint-plugin-react
     "react/no-multi-comp": [2, {"ignoreStateless": true}],
     "react/jsx-max-props-per-line": 0,
