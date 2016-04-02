@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lystable",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Base eslint config conforming to Lystable development guidelines",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "url": "git+https://github.com/lystable/guidelines.git"
   },
   "peerDependencies": {
-    "eslint-config-airbnb": "^2.1.1",
+    "eslint-config-airbnb": ">=2.1.1",
     "eslint": ">=1.0.0"
   }
 }
