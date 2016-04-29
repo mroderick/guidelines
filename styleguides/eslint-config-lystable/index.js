@@ -15,6 +15,7 @@ module.exports = {
     'no-use-before-define': [ERROR, 'nofunc'],
     'no-console': ERROR,
     'no-loop-func': OFF,
+    'no-underscore-dangle': OFF,
     'indent': [ERROR, 2, {'SwitchCase': 1}],
     'quotes': [ERROR, 'single', 'avoid-escape'],
     'no-nested-ternary': OFF,
