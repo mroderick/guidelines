@@ -22,7 +22,18 @@
     "url": "git+https://github.com/lystable/guidelines.git"
   },
   "peerDependencies": {
-    "eslint-config-airbnb": ">=2.1.1",
-    "eslint": ">=1.0.0"
+    "eslint-config-airbnb": "8.0.0",
+    "eslint-plugin-import": "1.6.0",
+    "eslint-plugin-react": "5.0.1",
+    "eslint-plugin-jsx-a11y": "^1.0.3",
+    "eslint": "2.8.0"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "eslint": "2.8.0",
+    "eslint-config-airbnb": "8.0.0",
+    "eslint-plugin-import": "1.6.0",
+    "eslint-plugin-react": "5.0.1",
+    "eslint-plugin-jsx-a11y": "^1.0.3"
   }
 }
