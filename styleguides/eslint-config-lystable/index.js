@@ -17,7 +17,7 @@ module.exports = {
     'no-loop-func': OFF,
     'no-underscore-dangle': OFF,
     'indent': [ERROR, 2, {'SwitchCase': 1}],
-    'quotes': [ERROR, 'single', 'avoid-escape'],
+    'quotes': [ERROR, 'single', {'avoidEscape': true, 'allowTemplateLiterals': true}],
     'no-nested-ternary': OFF,
     'padded-blocks': OFF,
     'space-infix-ops': OFF,
@@ -29,6 +29,13 @@ module.exports = {
     'quote-props': OFF, // prefer but allow consistency
     'no-unneeded-ternary': [ERROR, {'defaultAssignment': true}],
     'max-len': OFF,
+    'no-restricted-syntax': [
+      ERROR,
+      'BreakStatement',
+      'DebuggerStatement',
+      'LabeledStatement',
+      'WithStatement',
+    ],
     // react rules - https://github.com/yannickcr/eslint-plugin-react
     'react/no-multi-comp': [ERROR, {'ignoreStateless': true}],
     'react/jsx-max-props-per-line': OFF,
