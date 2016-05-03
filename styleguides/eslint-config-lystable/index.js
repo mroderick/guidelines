@@ -31,7 +31,6 @@ module.exports = {
     'max-len': OFF,
     'no-restricted-syntax': [
       ERROR,
-      'BreakStatement',
       'DebuggerStatement',
       'LabeledStatement',
       'WithStatement',
@@ -50,6 +49,7 @@ module.exports = {
     'react/jsx-closing-bracket-location': [ERROR, 'tag-aligned'],
     // TODO: rules which aren't quite working right...
     'react/display-name': [OFF, {'ignoreTranspilerName': false}], // captures any function returning jsx
+    'react/jsx-curly-spacing': OFF, // https://github.com/yannickcr/eslint-plugin-react/pull/584
     // TODO: rules to roll in over time...
     'comma-dangle': [OFF, 'always-multiline'],
     'react/jsx-handler-names': OFF,
