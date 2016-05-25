@@ -86,6 +86,10 @@ Every branch must be code reviewed before being merged into ``master`` and
 have a stamp after the most recent commit indicating that the reviewer is
 happy with all the changes in that branch.
 
+**All code should be checked out and used by the reviewer wherever possible,
+especially when related to a feature or some functionality, to ensure the
+usability of the end result.**
+
 Code reviews are a collaborative process and form a conversation between a
 developer and one or more other members on the team and should be treated as
 such. The goal is to end up with the highest quality code possible (within
@@ -142,6 +146,19 @@ Improvements
     Try to be objective in differentiating between the *right* way to
     implement something and the way *you* would have implemented it if you
     were writing the code.
+
+Merging
+-------
+
+The requirements for a pull request to be considered ready to merge
+are as follows:
+
+* At least one comment from the reviewer which has been addressed
+  (in code or in reply) by the author
+* An emoji stamp (:+1: or other) from the reviewer(s) after the most
+  recent commit
+* The branch must be strictly ahead of master (eg. containing all of the
+  commits currently in master)
 
 Documentation
 ~~~~~~~~~~~~~
