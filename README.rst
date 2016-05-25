@@ -1,8 +1,31 @@
 Lystable developer guidelines
 =============================
 
+Overview
+--------
+
+#. `Development process <#development-process>`_
+    * `Editors <#editors>`_
+    * `Testing <#testing>`_
+    * `Branching <#branching>`_
+    * `Code review <#code-review>`_
+    * `Documentation <#documentation>`_
+    * `Blockers <#blockers>`_
+#. `Scoping new work <#scoping-new-work>`_
+    * `Identifying new work <#identifying-new-work>`_
+#. `Improvements <#improvements>`_
+#. `Project specifics <#project-specifics>`_
+#. `Open Source <#open-source>`_
+
+Styleguides:
+    * `Python <styleguides/python.rst>`_
+    * `Javascript <styleguides/javascript.rst>`_
+
+Development process
+-------------------
+
 Editors
--------
+~~~~~~~
 
 There are many text editors and IDEs out there and we all have our favourite.
 
@@ -23,7 +46,7 @@ repository. More information can be found at :
 * IntelliJ editors (PyCharm etc.) : https://plugins.jetbrains.com/plugin/7294
 
 Testing
--------
+~~~~~~~
 
 Testing is great, it proves that your code works (so that someone else won't
 have to) and provides a great comfort blanket for refactoring and working
@@ -38,7 +61,7 @@ add redundent tests or to test third party code. Focus instead on writing
 tests with clear objectives and assertions.
 
 Branching
----------
+~~~~~~~~~
 
 We use `git flow <http://nvie.com/posts/a-successful-git-branching-model/>`_
 as the base for our branching model.
@@ -56,8 +79,8 @@ few years time.
 
 The ``master`` branch is reserved to track against deployed code.
 
-Code review / QA
-----------------
+Code review
+~~~~~~~~~~~
 
 Every branch must be code reviewed before being merged into ``master`` and
 have a stamp after the most recent commit indicating that the reviewer is
@@ -138,7 +161,7 @@ are as follows:
   commits currently in master)
 
 Documentation
--------------
+~~~~~~~~~~~~~
 
 Where possible code should be documented for other contributers, the wider
 development team and any others that may need to utilise code from that
@@ -152,7 +175,7 @@ in JavaScript to create a complete auto-documentation feature. More information
 on JSDoc can be found here : http://usejsdoc.org/howto-amd-modules.html
 
 Blockers
---------
+~~~~~~~~
 
 We all get blocked by things from time to time, whether they be waiting for
 the answer to a question or waiting for another piece of work to be completed.
@@ -162,20 +185,83 @@ of the blocker to the rest of the team, especially those who can remove it.
 Most commonly this can be done during the daily standup or a discussion at the
 point where the blocker is identified.
 
+Scoping new work
+----------------
+
+Identifying new work
+~~~~~~~~~~~~~~~~~~~~
+
+New work tends to fall into two categories, Product/Feature work or
+Technical/Infrastructure work. This may be identified ahead of time from a
+roadmap or through the course of some other work where changes fall outside
+the scope of the current ticket. The process for scoping this work should
+primarily look the same regardless of it's source.
+
+Clarifying the requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Without clear requirements, the implementation and the desired end result
+is likely to take longer to achieve.
+
+A good idea is to validate the requirements with others that will be
+impacted by the proposed changes. For Product work, this could be whoever
+requested the feature, or other members of the product team. For
+infrastructure or architecture work this might be other engineers that would
+use the result most frequently.
+
+Epics
+~~~~~
+
+If a feature requires a substantial amount of effort or input from several
+parties, it makes sense to group a number of tickets under an `Epic`.
+
+What to include in a ticket
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Context - Why are we building this and where does it fit alongside other
+  tickets (blockers etc.)
+* Definition of done (tests, docs, reviews, etc) - clear outcomes of this
+  ticket
+* Links to supporting documentation (designs, google docs, etc)
+* Implementation suggestions - We don't need to do all the design work but the
+  engineer picking up the ticket should have a clear understanding of what
+  the intended implementation was (also helps for sizing)
+* Where the new code is likely to live (clientside? / serverside? / existing
+  service? / new component?)
+* Outstanding questions that need answering as part of this ticket
+* What is out of scope for this ticket
+
+Sizing
+~~~~~~
+
+* max size
+* planning poker
+* atomic bits of work
+
 Improvements
 ------------
 
 Improvements to the development process should be discussed in the Sprint
 Retrospectives at the end of each sprint.
 
-Styleguides
------------
-
-* `Python <styleguides/python.rst>`_
-* `Javascript <styleguides/javascript.rst>`_
-
 Project specifics
 -----------------
 
 See the ``README`` of the project you are contributing to for more specific
 guidelines and conventions used within that codebase.
+
+Open source
+-----------
+
+We love open source at Lystable and believe in being good citizens within the
+open source community.
+
+This means that we not only contribute back to our favourite projects when we
+can but also maintain `a number of open source libraries and frameworks
+<https://github.com/lystable>`_ of our own.
+
+New dependencies to either internal or open source projects must be authorised
+by the CTO or the primary maintainer of the project. The licensing of any new
+dependencies must be compatible with existing licenses used within the project.
+Any new licensing requirements must be approved and signed off in writing by
+the CTO.
