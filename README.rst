@@ -15,6 +15,7 @@ Overview
     * `Identifying new work <#identifying-new-work>`_
 #. `Improvements <#improvements>`_
 #. `Project specifics <#project-specifics>`_
+#. `Open Source <#open-source>`_
 
 Styleguides:
     * `Python <styleguides/python.rst>`_
@@ -62,7 +63,7 @@ tests with clear objectives and assertions.
 Branching
 ~~~~~~~~~
 
-We use [git flow](http://nvie.com/posts/a-successful-git-branching-model/)
+We use `git flow <http://nvie.com/posts/a-successful-git-branching-model/>`_
 as the base for our branching model.
 
 All new code should be committed to a feature branch branched off ``develop``
@@ -71,9 +72,9 @@ and branches should have a name descriptive of the feature being worked on.
 As we have Github connected to JIRA, branches can be created from your epics,
 stories, or tasks. You are also encouraged to name your branches so that JIRA
 picks up on them automatically. All you have to do is to make sure the
-ticket number, ie. `LYS-123`, is in the branch name -- something like 
-`feature/LYS-123-something-descriptive` should suffice. This helps us 
-document your commits and branches both during code-reviews and in a 
+ticket number, ie. `LYS-123`, is in the branch name -- something like
+`feature/LYS-123-something-descriptive` should suffice. This helps us
+document your commits and branches both during code-reviews and in a
 few years time.
 
 The ``master`` branch is reserved to track against deployed code.
@@ -231,3 +232,19 @@ Project specifics
 
 See the ``README`` of the project you are contributing to for more specific
 guidelines and conventions used within that codebase.
+
+Open source
+-----------
+
+We love open source at Lystable and believe in being good citizens within the
+open source community.
+
+This means that we not only contribute back to our favourite projects when we
+can but also maintain `a number of open source libraries and frameworks
+<https://github.com/lystable>`_ of our own.
+
+New dependencies to either internal or open source projects must be authorised
+by the CTO or the primary maintainer of the project. The licensing of any new
+dependencies must be compatible with existing licenses used within the project.
+Any new licensing requirements must be approved and signed off in writing by
+the CTO.
