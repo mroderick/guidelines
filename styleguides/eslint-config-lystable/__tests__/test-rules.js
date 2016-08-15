@@ -7,7 +7,11 @@ const cli = new CLIEngine({
   baseConfig: eslintrc,
 
   // This rule fails when executing on text.
-  rules: {indent: 0},
+  rules: {
+    indent: 0,
+    'import/no-extraneous-dependencies': 0,
+    'import/no-unresolved': 0,
+  },
 });
 
 function lint(text) {
@@ -42,7 +46,7 @@ test('should error on browser globals', (t) => {
 
 test('should handle react components', (t) => {
   const result = lint(wrapText(`
-    import React from 'react'; // eslint-disable-line import/no-unresolved
+    import React from 'react';
 
     export default class TestComponent extends React.Component {
       render() {

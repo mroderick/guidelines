@@ -35,6 +35,7 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+    'comma-dangle': [ERROR, 'always-multiline'],
     // react rules - https://github.com/yannickcr/eslint-plugin-react
     'react/no-multi-comp': [ERROR, {'ignoreStateless': true}],
     'react/jsx-max-props-per-line': OFF,
@@ -51,7 +52,6 @@ module.exports = {
     'react/display-name': [OFF, {'ignoreTranspilerName': false}], // captures any function returning jsx
     'react/jsx-curly-spacing': OFF, // https://github.com/yannickcr/eslint-plugin-react/pull/584
     // TODO: rules to roll in over time...
-    'comma-dangle': [OFF, 'always-multiline'],
     'react/jsx-handler-names': OFF,
     'react/forbid-prop-types': OFF,
     'react/jsx-no-bind': OFF,
