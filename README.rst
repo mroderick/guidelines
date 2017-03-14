@@ -58,7 +58,8 @@ and watch out for the inevitable daylight savings bugs!
 
 There is such a thing as too much testing and care should be taken not to
 add redundent tests or to test third party code. Focus instead on writing
-tests with clear objectives and assertions.
+tests with clear objectives and assertions. If you are unsure about the amount
+of testing, please ask for it to be a focus in your code review.
 
 Branching
 ~~~~~~~~~
@@ -68,14 +69,6 @@ as the base for our branching model.
 
 All new code should be committed to a feature branch branched off ``develop``
 and branches should have a name descriptive of the feature being worked on.
-
-As we have Github connected to JIRA, branches can be created from your epics,
-stories, or tasks. You are also encouraged to name your branches so that JIRA
-picks up on them automatically. All you have to do is to make sure the
-ticket number, ie. `LYS-123`, is in the branch name -- something like
-`feature/LYS-123-something-descriptive` should suffice. This helps us
-document your commits and branches both during code-reviews and in a
-few years time.
 
 The ``master`` branch is reserved to track against deployed code.
 
@@ -147,6 +140,25 @@ Improvements
     implement something and the way *you* would have implemented it if you
     were writing the code.
 
+Labels:
+    Please use the Github labels to indicate at what stage the PR is in.
+
+    wip:
+      It is OK to create a PR before you are ready for a code review,
+      but if you do this please use the `wip` tag to indicate that it is in
+      progress.
+
+    review:
+      When the code is ready for review, add this label, and remove any
+      contradicting labels. This will add the Lystacop checklist and indicate
+      you are ready for review
+
+    ready:
+      Indicates you are ready to merge.
+
+    There are other useful labeles too which are self explainitory,
+    take a look and feel free to use as appropriate.
+
 Merging
 -------
 
@@ -155,8 +167,8 @@ are as follows:
 
 * At least one comment from the reviewer which has been addressed
   (in code or in reply) by the author
-* An emoji stamp (:+1: or other) from the reviewer(s) after the most
-  recent commit
+* An emoji stamp (:+1: or other), or an approved GitHub review, from the
+  reviewer(s) after the most recent commit
 * The branch must be strictly ahead of master (eg. containing all of the
   commits currently in master)
 
@@ -235,7 +247,7 @@ Sizing
 ~~~~~~
 
 * max size
-* planning poker
+* T-shirt size for the work (S, M, L, XL)
 * atomic bits of work
 
 Improvements
