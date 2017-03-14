@@ -7,7 +7,7 @@ tools including linters and console scripts to help with static analysis of
 your code against these rules.
 
 For a more detailed style guide, please read through
-`Googles style guide <https://google.github.io/styleguide/pyguide.html>` _.
+`Googles style guide <https://google.github.io/styleguide/pyguide.html>`_.
 
 In addition, below are some extensions or clarifications
 that should be followed for Lystable projects.
