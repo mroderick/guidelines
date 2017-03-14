@@ -6,7 +6,10 @@ We follow the pretty universal standards presented in the
 tools including linters and console scripts to help with static analysis of
 your code against these rules.
 
-In addition to the PEP8 rules, below are some extensions or clarifications
+For a more detailed style guide, please read through
+`Googles style guide <https://google.github.io/styleguide/pyguide.html>`_.
+
+In addition, below are some extensions or clarifications
 that should be followed for Lystable projects.
 
 Brackets
