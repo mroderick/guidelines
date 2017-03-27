@@ -19,7 +19,7 @@ Overview
 
 Styleguides:
     * `Python <styleguides/python.rst>`_
-    * `Javascript <styleguides/javascript.rst>`_
+    * `Javascript <styleguides/javascript.md>`_
 
 Development process
 -------------------
