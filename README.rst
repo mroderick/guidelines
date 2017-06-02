@@ -1,4 +1,4 @@
-Lystable developer guidelines
+Kalo developer guidelines
 =============================
 
 Overview
@@ -265,12 +265,12 @@ guidelines and conventions used within that codebase.
 Open source
 -----------
 
-We love open source at Lystable and believe in being good citizens within the
+We love open source at Kalo and believe in being good citizens within the
 open source community.
 
 This means that we not only contribute back to our favourite projects when we
 can but also maintain `a number of open source libraries and frameworks
-<https://github.com/lystable>`_ of our own.
+<https://github.com/kalohq>`_ of our own.
 
 New dependencies to either internal or open source projects must be authorised
 by the CTO or the primary maintainer of the project. The licensing of any new
