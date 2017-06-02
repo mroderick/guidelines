@@ -8,7 +8,7 @@ Exceptions or extensions to the specifics discussed in that guide are
 documented here or in project specific documentation.
 
 ### Eslint Config
-Use the base [Lystable eslint config](https://www.npmjs.com/package/eslint-config-lystable) for your Javascript projects! Find details [here](eslint-config-lystable).
+Use the base [Kalo eslint config](https://www.npmjs.com/package/eslint-config-lystable) for your Javascript projects! Find details [here](eslint-config-lystable).
 
 Function definition
 -------------------

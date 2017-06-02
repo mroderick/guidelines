@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-lystable",
   "version": "6.0.0",
-  "description": "Base eslint config conforming to Lystable development guidelines",
+  "description": "Base eslint config conforming to Kalo development guidelines",
   "main": "index.js",
   "scripts": {
     "test": "ava __tests__/*.js"
@@ -10,7 +10,7 @@
     "eslint",
     "javascript",
     "config",
-    "lystable"
+    "kalo"
   ],
   "author": {
     "name": "Chris Pearce",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lystable/guidelines.git"
+    "url": "git+https://github.com/kalohq/guidelines.git"
   },
   "peerDependencies": {
     "eslint-config-airbnb": ">=13.0.0",

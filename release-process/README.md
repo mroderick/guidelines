@@ -1,6 +1,6 @@
 ## Local Setup
 
-- [Install dennis](https://github.com/lystable/dennis)
+- [Install dennis](https://github.com/kalohq/dennis)
 
 **All `dennis` commands should be run while inside the project-to-be-released directory.**
 
