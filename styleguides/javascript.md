@@ -8,7 +8,7 @@ Exceptions or extensions to the specifics discussed in that guide are
 documented here or in project specific documentation.
 
 ### Eslint Config
-Use the base [Kalo eslint config](https://www.npmjs.com/package/eslint-config-kalo) for your Javascript projects! Find details [here](eslint-config-kalo).
+Use the base [Kalo eslint config](https://www.npmjs.com/package/@kalo/eslint-config) for your Javascript projects! Find details [here](@kalo/eslint-config).
 
 Function definition
 -------------------
