@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-kalo",
+  "name": "@kalo/eslint-config",
   "version": "6.0.0",
   "description": "Base eslint config conforming to Kalo development guidelines",
   "main": "index.js",
